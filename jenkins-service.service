@@ -1,0 +1,11 @@
+[Unit]
+Description=<runs jenkins>
+
+[Service]
+User=<oracle>
+WorkingDirectory=</oracle>
+ExecStart=<java -jar jenkins.war>
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
